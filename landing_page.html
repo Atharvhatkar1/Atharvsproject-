@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Landing page</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        /*style the body*/
+        body{
+            font-family: Arial;
+            margin: 0;
+        }
+        .heading{
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            font-size: 25px;
+            color: #333;
+        }
+        /*style the header*/
+        .header{
+            font-size: larger;
+            font-style:white;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 600;
+            background-color: #ffee04;
+            padding: 60px;
+            text-align: center;
+        }
+        .navbar{
+            display: flex;
+            background-color: #9cffc9;
+            position: sticky;
+            top: 0;
+        }
+        .navbar a {
+            color:black;
+            padding: 14px 16px;
+            text-decoration:none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #333;
+            color: white;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .sidebar{
+            flex:30%;
+            background-color:azure;
+            padding: 20px;
+            font-size: medium;
+            font-style: rgb(18, 3, 31);
+            font-display: swap;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .main-content{
+            font-size: larger;
+            font-weight: bold;
+            text-align: left;
+            font-style: rgb(18, 3, 31);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            flex: 70%;
+            background-color: antiquewhite;
+            padding: 20px;
+        }
+        .title-image{
+            background-color:tan;
+            width:100%; 
+            max-width:100%;
+            height: auto;
+            padding:20px;
+        }
+        .img1{
+            background-color:tan;
+            width:100%; 
+            max-width:100%;
+            height: auto;
+            padding:20px;
+            border-radius: 8px;
+            ;
+        }
+        .img{
+            background-color:tan;
+            width:50%; 
+            max-width:50%;
+            height: auto;
+            padding:10px;
+            border-radius: 8px;
+            position: relative;
+
+            animation-name: image;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        .main-sub-content{
+            font-size: larger;
+            font-style: rgb(18, 3, 31);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            list-style-image: url("checkmark.png");
+        }
+        @keyframes image {
+            0% {background-color: thistle; left:0px; top:0px;}
+            25% {background-color: rgb(213, 124, 51); left:200px; top:0px;}
+            50% {background-color: rgb(208, 41, 85); left:200px; top:50px;}
+            75% {background-color: rgb(31, 146, 86); left:0px; top:50px;}
+            100% {background-color: rgb(120, 140, 30); left:0px; top:0px;}
+        }
+        .footer{
+            padding: 5px;
+            text-align: center;
+            background-color: #557e3ccf;
+        }
+        ul{
+            list-style-image: url("checkmark.png");
+        }
+        @media(max-width:700px){
+            .row,.navbar{
+                flex-direction: column
+            }
+        }
+
+    </style>
+</head>
+<body>
+   <div class = "heading" style="background-color: pink; padding: 2px;">
+       <h3 style ="text-align: center">!!!Big Bonanza Offer!!!</h3>
+    </div>
+    <div class="header";style="text-align:center">
+        <h1> Welcome To Home Mart</h1>
+        <p>The place where dreams become true <br><strong>!Get Strong Deals on Electronics Items!</strong>.</p>
+    </div>
+    <div class = "navbar">
+        <a href="landing_page.html">Home</a>
+        <a href = "contactus.html"> Contact us </a>
+    </div>
+    <div class = "row">
+        <div class = "sidebar">
+            <h1>Deals on phone</h1>
+            <h3>Sample photos</h3>
+            <img src="iphone.jpeg" class="img1" height="60px">
+            <p>1.Design & Display – Titanium frame with 6.3-inch Super Retina XDR OLED (120Hz ProMotion).<br>
+
+                2.Performance – Powered by A18 Pro chip with 6-core CPU & GPU for lightning-fast processing.<br>
+
+                3.Camera System – 48MP main, 48MP Ultra Wide, 12MP 5x Telephoto with advanced stabilization.<br>
+
+                4.Battery & Charging – 3582mAh battery, supports 25W fast charging and extended power efficiency.<br>
+                5.Features – Face ID, Dynamic Island, Always-On display, and ProRAW/ProRes video recording.<br>
+
+                6.Connectivity & Software – Runs on iOS 18, features 5G, Wi-Fi 7, and IP68 water resistance.<br></p>
+            <h3>special one time offer</h3>
+            <p><strong>!!!!Deadline till 21 june ,2025!!!!</strong></p>
+            <img src="75.jpeg"class="img" height="60px">
+        </div>
+        <div class="main-content">
+            <h1><strong>Online + Offline stores avilable</strong></h1>
+            <h3>====No Bargain==== <br><strong>>>>>>fixed prices<<<<</strong></h3>
+            <img src="offer.jpeg" class = "title-image" height="60px">
+            <div class=" main-sub-content">
+                <h1>About consumers offers</h1>
+            
+                <p>>>Mega Discount Sale – Get up to 40% off on the latest smartphones, including the iPhone 16 Pro! Limited-time festive deal.<br>
+                ||Free Accessories – Buy any smartphone and receive a complimentary pair of wireless earbuds worth ₹3,000.<br>
+
+                >>Exclusive Bundle Offers – Buy an iPhone 16 Pro and get free accessories like tempered glass and a premium case.<br>
+                ||Limited Edition Colors – Choose from exclusive colors available only during the festive sale.#<br>
+
+                ?Easy EMI Plans – Own the iPhone 16 Pro today with zero down payment & no-cost EMI options for up to 12 months.<Br>
+                >>HDFC Bank Offer – Get an additional ₹5,000 off on your purchase using HDFC Bank credit/debit cards.**<br>
+
+                ||Exchange Bonus – Swap your old smartphone and get an extra ₹10,000 off on your new iPhone 16 Pro purchase.<br>
+
+                >>Lucky Draw & Gifts – Exciting prizes for shoppers! Get a chance to win a smartwatch, earbuds, or cashback vouchers.<br></p>
+                <p>**#terms and conditions applied* </p>
+                 <h2> Exchange of old phones are avilable on selected brands Only</h2>
+            </div>
+            <h5>offer ending soon grab it or gone</h5>
+            <ul>
+            <li>All samsung phones are avilable.</li>
+            <li>Best offers on Oppo and Vivo phones.</li>
+            <li>return in 7 days is acceptable.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>>>>>>>>>>>DONT WAIT !JUST GRAB IT<<<<<<<<<<</h2>
+
+    </div>
+</body>
+</html> 

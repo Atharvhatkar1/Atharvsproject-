@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to right, #b88989, #b0aaa6, #91c873, #7eada4 75%);
+  color: navy;
+  line-height: 1.6;
+  text-align: center;
+  opacity: 0.95;
+}
+
+.navbar {
+  display: flex;
+  background-color: #656262;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #333;
+  color: white;
+}
+
+.form-title {
+  font-size: 36px;
+  margin: 40px 0 20px;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.col-25 {
+  flex: 1;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.col-75 {
+  flex: 2;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+select:focus,
+textarea:focus {
+  background-color: #fff;
+  border: 3px solid #555;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.button {
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 30px;
+  transition: transform 0.4s ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.submit-btn-wrapper {
+  margin-top: 20px;
+}
